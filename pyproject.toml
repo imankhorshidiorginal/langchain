@@ -49,6 +49,7 @@ numpy = [
 langchain-experimental = { git = "https://github.com/langchain-ai/langchain-experimental.git", subdirectory = "libs/experimental" }
 langchain-anthropic = { path = "libs/partners/anthropic", develop = true }
 langchain-chroma = { path = "libs/partners/chroma", develop = true }
+langchain-google-vertexai = { git = "https://github.com/langchain-ai/langchain-google.git", subdirectory = "libs/vertexai" }
 langchain-mistralai = { path = "libs/partners/mistralai", develop = true }
 langgraph = { git = "https://github.com/langchain-ai/langgraph.git", subdirectory = "libs/langgraph" }
 jupyter = "^1.1.1"
