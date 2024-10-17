@@ -48,6 +48,7 @@ numpy = [
 [tool.poetry.group.test.dependencies]
 langchain-experimental = { git = "https://github.com/langchain-ai/langchain-experimental.git", subdirectory = "libs/experimental" }
 langchain-anthropic = { path = "libs/partners/anthropic", develop = true }
+langchain-aws = { git = "https://github.com/langchain-ai/langchain-aws.git", subdirectory = "libs/aws" }
 langchain-chroma = { path = "libs/partners/chroma", develop = true }
 langchain-google-vertexai = { git = "https://github.com/langchain-ai/langchain-google.git", subdirectory = "libs/vertexai" }
 langchain-mistralai = { path = "libs/partners/mistralai", develop = true }
@@ -55,6 +56,7 @@ langgraph = { git = "https://github.com/langchain-ai/langgraph.git", subdirector
 jupyter = "^1.1.1"
 click = "^8.1.7"
 faiss-cpu = "^1.7.4"
+wikipedia = "^1.4.0"
 pypdf = "^5.0.0"
 vcrpy = "^6.0.1"
 
