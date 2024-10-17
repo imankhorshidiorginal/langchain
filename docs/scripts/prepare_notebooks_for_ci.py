@@ -8,7 +8,7 @@ import click
 import nbformat
 
 logger = logging.getLogger(__name__)
-NOTEBOOK_DIRS = ("docs/docs/tutorials",)
+NOTEBOOK_DIRS = ("docs/docs/how_to", "docs/docs/tutorials")
 DOCS_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CASSETTES_PATH = os.path.join(DOCS_PATH, "cassettes")
 
@@ -18,6 +18,8 @@ NOTEBOOKS_NO_CASSETTES = [
 ]
 
 NOTEBOOKS_NO_EXECUTION = [
+    "docs/docs/how_to/add_scores_retriever.ipynb",  # Requires pinecone instance
+    "docs/docs/how_to/chat_model_rate_limiting.ipynb",  # Slow (demonstrates rate limiting)
     "docs/docs/tutorials/graph.ipynb",  # Requires local graph db running
     "docs/docs/tutorials/local_rag.ipynb",  # Local LLMs
     "docs/docs/tutorials/query_analysis.ipynb",  # Requires youtube_transcript_api
